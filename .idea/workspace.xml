@@ -71,7 +71,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580661172704</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Modified gitignore">
+      <created>1580661350556</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580661350556</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,17 +94,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit with memento pattern" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit with memento pattern" />
+    <MESSAGE value="Modified gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modified gitignore" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1580657680551">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580657680551" />
-    <state x="610" y="117" key="CommitChangelistDialog2" timestamp="1580661172171">
+    <state x="610" y="117" key="CommitChangelistDialog2" timestamp="1580661350081">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="610" y="117" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580661172171" />
+    <state x="610" y="117" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580661350081" />
     <state x="740" y="262" key="FileChooserDialogImpl" timestamp="1580660943963">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -122,6 +130,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580660026975" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1580661383009">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580661383009" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580659390030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
