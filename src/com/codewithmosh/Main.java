@@ -7,7 +7,8 @@ import com.codewithmosh.strategy.PngCompressor;
 public class Main {
 
     public static void main(String[] args) {
-        var imageStorage = new ImageStorage(new PngCompressor(), new BlackAndWhiteFilter()); // or jpeg...
-        imageStorage.store("a");
+        // Transfer money
+        // Generate report
+        // ...
     }
 }
