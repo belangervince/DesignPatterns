@@ -1,14 +1,11 @@
 package com.codewithmosh;
 
-import com.codewithmosh.strategy.BlackAndWhiteFilter;
-import com.codewithmosh.strategy.ImageStorage;
-import com.codewithmosh.strategy.PngCompressor;
+import com.codewithmosh.template.TransferMoneyTask;
 
 public class Main {
 
     public static void main(String[] args) {
-        // Transfer money
-        // Generate report
-        // ...
+        var task = new TransferMoneyTask();
+        task.execute();
     }
 }
