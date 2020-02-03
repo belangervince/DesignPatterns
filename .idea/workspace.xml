@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a418250-78ed-4026-8dc8-0dd7b8e1e29b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/strategy/ImageStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/designpatterns/com/codewithmosh/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/designpatterns/com/codewithmosh/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/iterator/BrowseHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/iterator/BrowseHistory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -128,7 +128,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580746863397</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Iterator pattern : the benefits">
+      <created>1580747084296</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1580747084296</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -151,17 +158,18 @@
     <MESSAGE value="State pattern : the solution" />
     <MESSAGE value="Iterator pattern : the problem" />
     <MESSAGE value="Iterator pattern : the solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Iterator pattern : the solution" />
+    <MESSAGE value="Iterator pattern : the benefits" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iterator pattern : the benefits" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1580746385318">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1580747247634">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580746385318" />
-    <state x="610" y="117" key="CommitChangelistDialog2" timestamp="1580746862921">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580747247634" />
+    <state x="610" y="117" key="CommitChangelistDialog2" timestamp="1580747083808">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="610" y="117" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580746862921" />
+    <state x="610" y="117" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580747083808" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1580661616185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -194,10 +202,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580660026975" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1580736350545">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1580747113442">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580736350545" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580747113442" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580659390030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
