@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a418250-78ed-4026-8dc8-0dd7b8e1e29b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/command/BlackAndWhiteCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/command/CompositeCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/command/ResizeCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/command/editor/BoldCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/command/editor/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/command/editor/History.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/command/editor/HtmlDocument.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/command/editor/UndoCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/command/editor/UndoableCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/designpatterns/com/codewithmosh/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/designpatterns/com/codewithmosh/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/Main.java" afterDir="false" />
@@ -180,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580767354805</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Command pattern : composite command">
+      <created>1580767639469</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1580767639469</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,21 +220,22 @@
     <MESSAGE value="Template method pattern : the solution" />
     <MESSAGE value="Command pattern : the problem" />
     <MESSAGE value="Command pattern : the solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Command pattern : the solution" />
+    <MESSAGE value="Command pattern : composite command" />
+    <option name="LAST_COMMIT_MESSAGE" value="Command pattern : composite command" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1580767488649">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1580768517867">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580767488649" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580768517867" />
     <state x="700" y="61" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580765498828">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="700" y="61" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580765498828" />
-    <state x="610" y="117" key="CommitChangelistDialog2" timestamp="1580767354241">
+    <state x="610" y="117" key="CommitChangelistDialog2" timestamp="1580767638966">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="610" y="117" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580767354241" />
+    <state x="610" y="117" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580767638966" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1580661616185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -233,22 +244,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="262" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580660943963" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580767629119">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1580768651556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580767629119" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580767629119">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580768651556" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1580768651556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580767629119" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580767629118">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580768651556" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1580768651556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580767629118" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580767629119">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580768651556" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1580768651556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580767629119" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580768651556" />
     <state x="461" y="157" key="SettingsEditor" timestamp="1580745542358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
