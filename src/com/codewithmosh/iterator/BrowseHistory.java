@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class BrowseHistory {
-    private String[] urls = new String[]; // should be another data structure
+    private List<String> urls = new ArrayList<>(); // should be another data structure
 
     public void push(String url) {
         urls.add(url);
@@ -17,7 +17,32 @@ public class BrowseHistory {
         return lastUrl;
     }
 
-    public String[] getUrls() {
-        return urls;
+    public Iterator createIterator() {
+        return new ListIterator(this);
+    }
+
+    public class ListIterator implements Iterator {
+
+        private BrowseHistory history;
+        private int index;
+
+        public ListIterator(BrowseHistory history){
+            this.history = history;
+        }
+
+        @Override
+        public boolean hasNext() {
+            return index < history.urls.size();
+        }
+
+        @Override
+        public String current() {
+            return history.urls.get(index);
+        }
+
+        @Override
+        public void next() {
+            index++;
+        }
     }
 }

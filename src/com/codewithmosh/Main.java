@@ -1,6 +1,7 @@
 package com.codewithmosh;
 
 import com.codewithmosh.iterator.BrowseHistory;
+import com.codewithmosh.iterator.Iterator;
 
 public class Main {
 
@@ -9,8 +10,11 @@ public class Main {
         history.push("a");
         history.push("b");
 
-        for (var i = 0; i < history.getUrls().size(); i++) {
-            System.out.println(history.getUrls().get(i));
+        Iterator iterator = history.createIterator();
+        while(iterator.hasNext()) {
+            var url = iterator.current();
+            System.out.println(url);
+            iterator.next();
         }
     }
 }
