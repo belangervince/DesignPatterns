@@ -1,6 +1,6 @@
 package com.codewithmosh.observer;
 
-public class DataSource {
+public class DataSource extends Subject {
     private int value;
 
     public int getValue() {
@@ -9,5 +9,6 @@ public class DataSource {
 
     public void setValue(int value) {
         this.value = value;
+        notifyObserver();
     }
 }
