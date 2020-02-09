@@ -1,8 +1,14 @@
 package com.codewithmosh.observer;
 
 public class SpreadSheet implements Observer {
+    private DataSource dataSource;
+
+    public SpreadSheet(DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
+
     @Override
-    public void update(int value) {
-        System.out.println("SpreadSheet got updated " + value);
+    public void update() {
+        System.out.println("SpreadSheet got updated " + dataSource.getValue());
     }
 }
