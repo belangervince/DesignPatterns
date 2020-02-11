@@ -1,9 +1,14 @@
 package com.codewithmosh.mediator;
 
-public class ArticlesDialogBox extends DialogBox {
-    private ListBox articleListBox = new ListBox(this);
-    private TextBox titleTextBox = new TextBox(this);
-    private Button saveButton = new Button(this);
+public class ArticlesDialogBox {
+    private ListBox articleListBox = new ListBox();
+    private TextBox titleTextBox = new TextBox();
+    private Button saveButton = new Button();
+
+    public ArticlesDialogBox() {
+        articleListBox.addEventHandler(this::articleSelected);
+        titleTextBox.addEventHandler(this::titleChanged);
+    }
 
     public void simulateUserInteraction() {
         articleListBox.setSelection("Article 1");
@@ -11,14 +16,6 @@ public class ArticlesDialogBox extends DialogBox {
         titleTextBox.setContent("Article 2");
         System.out.println("TextBox: " + titleTextBox.getContent());
         System.out.println("Button: " + saveButton.isEnabled());
-    }
-
-    @Override
-    public void changed(UIControl control) {
-        if (control == articleListBox)
-            articleSelected();
-        else if (control == titleTextBox)
-            titleChanged();
     }
 
     private void articleSelected() {

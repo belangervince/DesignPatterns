@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a418250-78ed-4026-8dc8-0dd7b8e1e29b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/mediator/ArticlesDialogBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/mediator/DialogBox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/mediator/EventHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/designpatterns/com/codewithmosh/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/designpatterns/com/codewithmosh/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/mediator/ArticlesDialogBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/mediator/ArticlesDialogBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/mediator/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/mediator/Button.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/mediator/DialogBox.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/mediator/ListBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/mediator/ListBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/mediator/TextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/mediator/TextBox.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/mediator/UIControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/mediator/UIControl.java" afterDir="false" />
@@ -23,8 +24,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -231,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581378685977</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Mediator pattern : the solution">
+      <created>1581381464322</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1581381464322</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -268,21 +276,26 @@
     <MESSAGE value="Observer pattern : push style communication" />
     <MESSAGE value="Observer pattern : pull style communication" />
     <MESSAGE value="Mediator pattern : the problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mediator pattern : the problem" />
+    <MESSAGE value="Mediator pattern : the solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mediator pattern : the solution" />
   </component>
   <component name="WindowStateProjectService">
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1581380953642">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581380953642" />
-    <state x="700" y="61" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1580765498828">
+    <state x="700" y="30" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581382276299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="700" y="61" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580765498828" />
-    <state x="610" y="117" key="CommitChangelistDialog2" timestamp="1581378685461">
+    <state x="700" y="30" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581382276299" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581381838782">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="610" y="117" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581378685461" />
+    <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581381838782" />
+    <state x="610" y="117" key="CommitChangelistDialog2" timestamp="1581381463840">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="610" y="117" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581381463840" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1580661616185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
