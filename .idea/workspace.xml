@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a418250-78ed-4026-8dc8-0dd7b8e1e29b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/mediator/EventHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/chainOfResponsability/Authenticator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/chainOfResponsability/Compressor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/chainOfResponsability/HttpRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/chainOfResponsability/Logger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/chainOfResponsability/WebServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/designpatterns/com/codewithmosh/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/designpatterns/com/codewithmosh/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/mediator/ArticlesDialogBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/mediator/ArticlesDialogBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/mediator/Button.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/mediator/Button.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/mediator/DialogBox.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/mediator/ListBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/mediator/ListBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/mediator/TextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/mediator/TextBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/mediator/UIControl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/mediator/UIControl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -239,7 +237,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581381464322</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Mediator pattern : implementation with observer pattern">
+      <created>1581382362428</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1581382362428</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -277,13 +282,14 @@
     <MESSAGE value="Observer pattern : pull style communication" />
     <MESSAGE value="Mediator pattern : the problem" />
     <MESSAGE value="Mediator pattern : the solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mediator pattern : the solution" />
+    <MESSAGE value="Mediator pattern : implementation with observer pattern" />
+    <option name="LAST_COMMIT_MESSAGE" value="Mediator pattern : implementation with observer pattern" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1581380953642">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1581465204101">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581380953642" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581465204101" />
     <state x="700" y="30" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581382276299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -292,10 +298,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581381838782" />
-    <state x="610" y="117" key="CommitChangelistDialog2" timestamp="1581381463840">
+    <state x="610" y="117" key="CommitChangelistDialog2" timestamp="1581382361868">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="610" y="117" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581381463840" />
+    <state x="610" y="117" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581382361868" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1580661616185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -304,22 +310,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="262" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580660943963" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1581381456542">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1581382382455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581381456542" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1581381456542">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581382382455" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1581382382455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581381456542" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1581381456542">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581382382455" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1581382382455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581381456542" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1581381456542">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581382382455" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1581382382455">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581381456542" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581382382455" />
     <state x="461" y="157" key="SettingsEditor" timestamp="1580745542358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -328,10 +334,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580660026975" />
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1581273297132">
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2" timestamp="1581382372855">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581273297132" />
+    <state x="552" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581382372855" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1580659390030">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
