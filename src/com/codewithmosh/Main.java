@@ -1,12 +1,11 @@
 package com.codewithmosh;
 
-import com.codewithmosh.observer.Chart;
-import com.codewithmosh.observer.DataSource;
-import com.codewithmosh.observer.SpreadSheet;
+import com.codewithmosh.mediator.ArticlesDialogBox;
 
 public class Main {
 
     public static void main(String[] args) {
-
+        var dialog = new ArticlesDialogBox();
+        dialog.simulateUserInteraction();
     }
 }
