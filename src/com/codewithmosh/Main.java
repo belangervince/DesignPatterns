@@ -1,17 +1,15 @@
 package com.codewithmosh;
 
-import com.codewithmosh.chainOfResponsability.*;
+import com.codewithmosh.visitor.AnchorNode;
+import com.codewithmosh.visitor.HeadingNode;
+import com.codewithmosh.visitor.HtmlDocument;
 
 public class Main {
 
     public static void main(String[] args) {
-        // auth -> logger -> compressor
-        var compressor = new Compressor(null);
-        var logger = new Logger(compressor);
-        var auth = new Authenticator(logger);
-
-        var server = new WebServer(auth);
-
-        server.handle(new HttpRequest("admin", "1234"));
+        var document = new HtmlDocument();
+        document.add(new HeadingNode());
+        document.add(new AnchorNode());
+        document.highlight();
     }
 }
