@@ -1,8 +1,6 @@
 package com.codewithmosh;
 
-import com.codewithmosh.visitor.AnchorNode;
-import com.codewithmosh.visitor.HeadingNode;
-import com.codewithmosh.visitor.HtmlDocument;
+import com.codewithmosh.visitor.*;
 
 public class Main {
 
@@ -10,6 +8,7 @@ public class Main {
         var document = new HtmlDocument();
         document.add(new HeadingNode());
         document.add(new AnchorNode());
-        document.highlight();
+        document.execute(new HighlightOperation());
+        document.execute(new PlainTextOperation());
     }
 }
