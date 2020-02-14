@@ -1,20 +1,16 @@
 package com.codewithmosh;
 
-import com.codewithmosh.decorator.CloudStream;
-import com.codewithmosh.decorator.CompressedCloudStream;
-import com.codewithmosh.decorator.EncryptedCloudStream;
-import com.codewithmosh.decorator.Stream;
+import com.codewithmosh.facade.Message;
+import com.codewithmosh.facade.NotificationServer;
 
 public class Main {
 
     public static void main(String[] args) {
-        storeCreditCard(
-                new EncryptedCloudStream(
-                        new CompressedCloudStream(
-                                new CloudStream())));
-    }
-
-    public static void storeCreditCard(Stream stream) {
-        stream.write("1234-1234-1234");
+        var server = new NotificationServer();
+        var connection = server.connect("ip");
+        var authToken = server.authenticate("appId", "key");
+        var message = new Message("hello world");
+        server.send(authToken, message, "target");
+        connection.disconnect();
     }
 }
