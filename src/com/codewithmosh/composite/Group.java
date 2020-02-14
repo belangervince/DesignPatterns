@@ -3,19 +3,22 @@ package com.codewithmosh.composite;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Group {
-    private List<Object> objects = new ArrayList<>();
+public class Group implements Component {
+    private List<Component> components = new ArrayList<>();
 
-    public void add(Object shape) {
-        objects.add(shape);
+    public void add(Component shape) {
+        components.add(shape);
     }
 
+    @Override
     public void render() {
-        for (var shape : objects) {
-            if (shape instanceof Shape)
-                ((Shape)shape).render();
-            else
-                ((Group)shape).render();
-        }
+        for (var component : components)
+            component.render();
+    }
+
+    @Override
+    public void move() {
+        for (var component : components)
+            component.move();
     }
 }
