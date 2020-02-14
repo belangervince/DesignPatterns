@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2a418250-78ed-4026-8dc8-0dd7b8e1e29b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/adapter/Filter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/adapter/Image.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/adapter/ImageView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/adapter/VividFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/adapter/avaFilters/Caramel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/adapter/CaramelAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/adapter/CaramelFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/designpatterns/com/codewithmosh/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/designpatterns/com/codewithmosh/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -292,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581691512151</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Adapter pattern : the problem">
+      <created>1581691888451</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1581691888451</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,7 +312,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="State pattern : the solution" />
     <MESSAGE value="Iterator pattern : the problem" />
     <MESSAGE value="Iterator pattern : the solution" />
     <MESSAGE value="Iterator pattern : the benefits" />
@@ -334,13 +336,14 @@
     <MESSAGE value="Visitor pattern : the solution" />
     <MESSAGE value="Composite pattern : the problem" />
     <MESSAGE value="Composite pattern : the solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Composite pattern : the solution" />
+    <MESSAGE value="Adapter pattern : the problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adapter pattern : the problem" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1581691619707">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1581692317454">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581691619707" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581692317454" />
     <state x="700" y="30" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581382276299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -349,10 +352,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581381838782" />
-    <state x="610" y="117" key="CommitChangelistDialog2" timestamp="1581691511482">
+    <state x="610" y="117" key="CommitChangelistDialog2" timestamp="1581691887831">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="610" y="117" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581691511482" />
+    <state x="610" y="117" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581691887831" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1580661616185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
