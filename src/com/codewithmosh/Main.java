@@ -1,11 +1,12 @@
 package com.codewithmosh;
 
-import com.codewithmosh.facade.NotificationService;
+import com.codewithmosh.flyweight.PointService;
 
 public class Main {
 
     public static void main(String[] args) {
-        var service = new NotificationService();
-        service.send("hello world", "target");
+        var service = new PointService();
+        for (var point : service.getPoints())
+            point.draw();
     }
 }
