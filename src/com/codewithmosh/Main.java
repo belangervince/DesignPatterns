@@ -1,16 +1,16 @@
 package com.codewithmosh;
 
-import com.codewithmosh.bridge.AdvancedRemoteControl;
-import com.codewithmosh.bridge.RemoteControl;
-import com.codewithmosh.bridge.SamsungTV;
-import com.codewithmosh.bridge.SonyTV;
+import com.codewithmosh.proxy.Ebook;
+import com.codewithmosh.proxy.Library;
 
 public class Main {
 
     public static void main(String[] args) {
-        //var remoteControl = new RemoteControl(new SonyTV());
-        //var remoteControl = new AdvancedRemoteControl(new SonyTV());
-        var remoteControl = new AdvancedRemoteControl(new SamsungTV());
-        remoteControl.turnOn();
+        var library = new Library();
+        String[] fileNames = {"a", "b", "c"};
+        for (var fileName : fileNames)
+            library.add(new Ebook(fileName));
+
+        library.openEbook("a"); // loads all books = problem
     }
 }
