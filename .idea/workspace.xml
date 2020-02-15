@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2a418250-78ed-4026-8dc8-0dd7b8e1e29b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/proxy/Ebook.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/proxy/Library.java" afterDir="false" />
+    <list default="true" id="2a418250-78ed-4026-8dc8-0dd7b8e1e29b" name="Default Changelist" comment="Proxy pattern : the problem">
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/proxy/EbookProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/proxy/LoggingEbookProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/codewithmosh/proxy/RealEbook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/designpatterns/com/codewithmosh/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/designpatterns/com/codewithmosh/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/codewithmosh/proxy/Ebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/codewithmosh/proxy/Ebook.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +52,9 @@
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.codewithmosh.proxy" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.codewithmosh.adapter" />
     </key>
@@ -359,7 +364,14 @@
       <option name="project" value="LOCAL" />
       <updated>1581798031628</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Proxy pattern : the problem">
+      <created>1581798476599</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1581798476599</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -376,7 +388,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Command pattern : composite command" />
     <MESSAGE value="Command pattern : undo mechanism" />
     <MESSAGE value="Observer pattern : the problem" />
     <MESSAGE value="Observer pattern : the solution" />
@@ -401,13 +412,14 @@
     <MESSAGE value="Flyweight pattern : the solution" />
     <MESSAGE value="Bridge pattern : the problem" />
     <MESSAGE value="Bridge pattern : the solution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bridge pattern : the solution" />
+    <MESSAGE value="Proxy pattern : the problem" />
+    <option name="LAST_COMMIT_MESSAGE" value="Proxy pattern : the problem" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1581797956087">
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser" timestamp="1581799086422">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581797956087" />
+    <state x="765" y="230" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581799086422" />
     <state x="700" y="30" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1581382276299">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -416,10 +428,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="268" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581381838782" />
-    <state x="610" y="117" key="CommitChangelistDialog2" timestamp="1581798031046">
+    <state x="610" y="117" key="CommitChangelistDialog2" timestamp="1581799127870">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="610" y="117" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581798031046" />
+    <state x="610" y="117" key="CommitChangelistDialog2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581799127870" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1580661616185">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -428,22 +440,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="262" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1580660943963" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1581798467384">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1581799153411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581798467384" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1581798467383">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581799153411" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1581799153411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581798467383" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1581798467383">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581799153411" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1581799153411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581798467383" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1581798467383">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581799153411" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1581799153411">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581798467383" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1581799153411" />
     <state x="461" y="157" key="SettingsEditor" timestamp="1580745542358">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
